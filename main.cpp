@@ -146,9 +146,8 @@ void DrawFood()
 
 void randomm (int &x, int &y)
 {
-  int maxX = gridX - 2, maxY = gridY - 2; //from 1 to 38
+  int maxX = gridX - 2, maxY = gridY - 2; //from 0 to 38
   int minn = 1;
-  srand(time(NULL));
   x = minn + rand() % (maxX - minn);
   y = minn + rand() % (maxY - minn);
 }
@@ -159,7 +158,8 @@ int main(int argc, char **argv)
 {
   glutInit(&argc, argv);
   glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE); //swap buffers (display && work)
-  glutInitWindowPosition(2000, 2000);
+  glutInitWindowPosition(500, 150);
+  glutInitWindowSize(1024, 600);
   glutCreateWindow("SNEAKY!");
   glutDisplayFunc(DisplayCallback);
   glutReshapeFunc(ReshapeCallback);
