@@ -1,10 +1,18 @@
 # Sneaky
-Snake Game 2D using OpenGl (glut);
+Snake Game 2D using OpenGl.
 
-# How it works ?
-1-You need to install OpenGl librares (gl.h && glut.h);
+---
 
-2-i made it using linux os so i used "zenity", you should install it before runing the game;
-
-3-if you want to run in windows you should swap(zenity, MessageBox());
+## Compiling & Running
+### 1. Install OpenGl librares (gl.h && glut.h) & Zenity.
+  ```bash
+  sudo apt install freeglut3-dev zenity
+  ```
+### 2. Compile & Run.
+  ```bash
+  g++ main.cpp -o sneaky -lGL -lGLU -lglut && ./sneaky
+  ```
+---
+## Preview
+https://user-images.githubusercontent.com/38042656/217795305-4ab6fa0b-dd23-422b-b5d1-ed7867d945cd.mp4
 
