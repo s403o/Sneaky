@@ -131,6 +131,13 @@ void DrawSnake()
     }
     food = true;
   }
+  for(int j = 1; j < snake_len; j++)
+  {
+    if(posX[j] == posX[0] && posY[j] == posY[0])
+    {
+      gameOver = true;
+    }
+  }
 }
 
 void DrawFood()
