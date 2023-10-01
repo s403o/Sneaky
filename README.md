@@ -4,13 +4,17 @@ Snake Game 2D using OpenGl.
 ---
 
 ## Compiling & Running
-### 1. Install OpenGl librares (gl.h && glut.h) & Zenity.
+### 1. Install requirments & build
   ```bash
-  sudo apt install freeglut3-dev zenity
+    make build
   ```
-### 2. Compile & Run.
+### 2. Run
   ```bash
-  g++ main.cpp -o sneaky -lGL -lGLU -lglut && ./sneaky
+    make run
+  ```
+### 3. Clean
+  ```bash
+    make clean
   ```
 ---
 ## Preview
